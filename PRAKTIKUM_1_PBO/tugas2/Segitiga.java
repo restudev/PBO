@@ -4,9 +4,9 @@ public static void main(String args[])
 	int a, b;
 	a=5;
 	b=12;
-	float luas= (0.5*a*b)f;
-	int c = Math.sqrt((a*a)+(b*b));
-	float kel= (a + b + c)f;
+	double luas= 0.5*a*b;
+	double c = Math.sqrt((a*a)+(b*b));
+	double kel= a + b + c;
 	System.out.println("sisi alas (a)		: " +a);
 	System.out.println("sisi tinggi (b)		: " +b);
 	System.out.println("sisi miring (c)		: " +c);
