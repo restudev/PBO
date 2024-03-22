@@ -1,37 +1,29 @@
-public class Matematika {
-    // float pertambahan(float a, float b){
-    //     return a + b;
-    // }
-    // float pengurangan(float a, float b){
-    //     return a - b;
-    // } 
-    // float perkalian(float a, float b){
-    //     return a * b;
-    // } 
-    // float pembagian(float a, float b){
-    //     return a / b;
-    // }     
+public class Matematika {     
 
-    float tambah = 0;
-    float kurang = 0;
-    float kali = 0;
-    float bagi = 0;
+    float hasil;
     float a, b;
 
+    public Matematika(float a, float b){
+        this.a = a;
+        this.b = b;
+    }
+
+    public Matematika(){}
+
     void pertambahan (float a, float b) {
-        tambah = a + b;
-        System.out.println("\n Hasil Pertambahan: " + a + " + " + b + " = " + tambah);
+        hasil = a + b;
+        System.out.println("\n Hasil Pertambahan: " + a + " + " + b + " = " + hasil);
     }
     void pengurangan (float a, float b) {
-        kurang = a - b;
-        System.out.println("\n Hasil Pengurangan: " + a + " - " + b + " = " + kurang);
+        hasil = a - b;
+        System.out.println("\n Hasil Pengurangan: " + a + " - " + b + " = " + hasil);
     }
     void perkalian (float a, float b) {
-        kali = a * b;
-        System.out.println("\n Hasil Perkalian: " + a + " x " + b + " = " + kali);
+        hasil = a * b;
+        System.out.println("\n Hasil Perkalian: " + a + " x " + b + " = " + hasil);
     }
     void pembagian (float a, float b) {
-        bagi = a / b;
-        System.out.println("\n Hasil Pembagian: " + a + " : " + b + " = " + bagi);
+        hasil = a / b;
+        System.out.println("\n Hasil Pembagian: " + a + " : " + b + " = " + hasil);
     }
 }
