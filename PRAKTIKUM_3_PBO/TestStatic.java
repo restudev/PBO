@@ -1,7 +1,7 @@
 public class TestStatic {
     int a = 10;
-    static int b = 10;
-    protected int c = 10;
+    static int b = 20;
+    protected int c = 30;
     public int d = 40;
     private int e = 50;
     void satu(){
