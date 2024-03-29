@@ -2,19 +2,36 @@ import java.util.Scanner;
 
 public class KonversiDetik {
     int detik;
+    int hasil;
 
     Scanner key = new Scanner(System.in);
 
-    int hari(int detik){
-        return detik/86400;
+    public KonversiDetik(int detik){
+        this.detik = detik;
     }
-    int jam(int detik){
-        return (detik%86400)/3600;
+
+    public KonversiDetik(){}
+
+    void inputDetik(){
+        System.out.println("Masukkan detik : "); detik = key.nextInt();
     }
-    int menit(int detik){
-        return ((detik%86400)%3600)/60;
+
+    void hari(){
+        hasil = detik/86400;
+        System.out.println("Hari : " + hasil); 
     }
-    int detik(int detik){
-        return ((detik%86400)%3600)%60;
+    void jam(){
+        hasil = (detik%86400)/3600;
+        System.out.println("Jam : " + hasil); 
     }
+    void menit(){
+        hasil = ((detik%86400)%3600)/60;
+        System.out.println("Menit : " + hasil); 
+    }
+    void detik(){
+        hasil = ((detik%86400)%3600)%60;
+        System.out.println("Detik : " + hasil); 
+    }
+
+
 }

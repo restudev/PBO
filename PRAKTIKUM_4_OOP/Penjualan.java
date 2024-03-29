@@ -1,7 +1,12 @@
+import java.util.Scanner;
+
 public class Penjualan {
     String kode, nama;
     float harga;
+    double total;
     int jumlah;
+    Scanner key = new Scanner(System.in);
+
 
     public Penjualan() {
     };
@@ -13,19 +18,31 @@ public class Penjualan {
         this.jumlah = jumlah;
     }
 
-    float getTotalPembelian() {
-        return harga * jumlah;
+    void inputData(){
+        System.out.println("Masukkan data penjualan");
+        System.out.println("Kode Barang : ");
+        kode = key.nextLine();
+        System.out.println("Nama Barang : ");
+        nama = key.nextLine();
+        System.out.println("Harga Satuan Barang : ");
+        harga = key.nextFloat();
+        System.out.println("Jumlah Barang : ");
+        jumlah = key.nextInt();
+    }
+
+    void hitungTotal() {
+        total = harga * jumlah;
+        System.out.println("Total Harga : " + total);
     }
 
     String getBonus() {
         String bonus = "";
-        float totalPembelian = getTotalPembelian();
 
-        if (totalPembelian >= 500000 && jumlah > 5) {
+        if (total >= 500000 && jumlah > 5) {
             bonus = "Setrika";
-        } else if (totalPembelian >= 100000 && jumlah > 3) {
+        } else if (total >= 100000 && jumlah > 3) {
             bonus = "Payung";
-        } else if (totalPembelian >= 50000 && jumlah > 2) {
+        } else if (total >= 50000 && jumlah > 2) {
             bonus = "Ballpoint";
         } else
             bonus = "tidak mendapatkan bonus";
@@ -38,7 +55,7 @@ public class Penjualan {
         System.out.println("Nama Barang : " + nama);
         System.out.println("Harga Satuan Barang : " + harga);
         System.out.println("Jumlah Barang : " + jumlah);
-        System.out.println("Total Harga : " + getTotalPembelian());
+        hitungTotal();
         System.out.println("Bonus : " + getBonus());
     }
 }
