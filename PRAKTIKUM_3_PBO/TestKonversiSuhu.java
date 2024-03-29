@@ -1,7 +1,12 @@
 public class TestKonversiSuhu {
     public static void main(String[] args) {
 
-        KonversiSuhu Suhu = new KonversiSuhu(36);
+        KonversiSuhu Suhuku = new KonversiSuhu();
+        Suhuku.hitungKelvin(23);
+        System.out.println("Suhunya : " + Suhuku.hitungKelvin(23.5f) + " K");
+        KonversiSuhu Suhu = new KonversiSuhu(35);
+        Suhu.inputCelcius();
+
         Suhu.hitungKelvin(Suhu.Celcius);
         Suhu.hitungFarhenheit(Suhu.Celcius);
         Suhu.hitungRankine(Suhu.Celcius);

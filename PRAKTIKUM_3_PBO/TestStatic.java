@@ -7,19 +7,19 @@ public class TestStatic {
     void satu(){
         dua();
         System.out.println("satu............");
-        System.out.println("satu............a"+a);
-        System.out.println("satu............b"+b);
-        System.out.println("satu............c"+c);
-        System.out.println("satu............d"+d);
-        System.out.println("satu............e"+e);
+        System.out.println("satu............a : "+a);
+        System.out.println("satu............b : "+b);
+        System.out.println("satu............c : "+c);
+        System.out.println("satu............d : "+d);
+        System.out.println("satu............e : "+e);
     }
     static void dua(){
-        // satu(); --> error ststic call non static
-        System.out.println("dua............"+b);
-        // System.out.println("dua............"+a); --> error ststic call var non static
+        // satu(); --> error static call non static
+        System.out.println("dua............ b : "+b);
+        // System.out.println("dua............ a : "+a); --> error static call var non static
     }
     public static void main(String[] a){
-        // satu(); --> error ststic call non static
-        dua(); 
+        // satu(); --> error static call non static
+        dua();
     }
 }

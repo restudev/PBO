@@ -4,7 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d369879-b60d-41c0-a2ad-8b16792ad30f" name="Changes" comment="" />
+    <list default="true" id="8d369879-b60d-41c0-a2ad-8b16792ad30f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../PRAKTIKUM_1_PBO/PRAKTIKUM_1_PBO.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PRAKTIKUM_1_PBO/tugas1/tugas1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PRAKTIKUM_1_PBO/tugas2/Kubus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PRAKTIKUM_1_PBO/tugas2/Lingkaran.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PRAKTIKUM_1_PBO/tugas2/Persegi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PRAKTIKUM_1_PBO/tugas2/Segitiga.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PRAKTIKUM_2_PBO/Mahasiswa.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PRAKTIKUM_2_PBO/Mobil2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PRAKTIKUM_2_PBO/MobilDemo2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PRAKTIKUM_2_PBO/Nilai.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PRAKTIKUM_2_PBO/PRAKTIKUM_2_PBO.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PRAKTIKUM_2_PBO/TesMobil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PRAKTIKUM_2_PBO/dataNilai.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PRAKTIKUM_3_PBO/KonversiSuhu.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PRAKTIKUM_3_PBO/KonversiSuhu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PRAKTIKUM_3_PBO/Matematika.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PRAKTIKUM_3_PBO/Matematika.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PRAKTIKUM_3_PBO/MatematikaDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PRAKTIKUM_3_PBO/MatematikaDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PRAKTIKUM_3_PBO/PRAKTIKUM_3_PBO.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../PRAKTIKUM_3_PBO/PRAKTIKUM_3_PBO.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PRAKTIKUM_3_PBO/PRAKTIKUM_3_PBO.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../PRAKTIKUM_3_PBO/PRAKTIKUM_3_PBO.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PRAKTIKUM_3_PBO/TestKonversiSuhu.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PRAKTIKUM_3_PBO/TestKonversiSuhu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PRAKTIKUM_3_PBO/TestStatic.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PRAKTIKUM_3_PBO/TestStatic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PRAKTIKUM_3_PBO/~$AKTIKUM_3_PBO.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,6 +94,8 @@
       <workItem from="1710575522736" duration="148000" />
       <workItem from="1710575709503" duration="745000" />
       <workItem from="1710913535340" duration="686000" />
+      <workItem from="1711091811288" duration="3000" />
+      <workItem from="1711495499141" duration="5000" />
     </task>
     <servers />
   </component>

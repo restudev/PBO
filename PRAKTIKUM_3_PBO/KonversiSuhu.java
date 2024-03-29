@@ -1,40 +1,84 @@
+import java.util.Scanner;
+
 public class KonversiSuhu {
 
     float hasil;
     int Celcius;
 
-    public KonversiSuhu(int Celcius){
+    Scanner key = new Scanner(System.in);
+
+    public KonversiSuhu() {
+    }
+
+    public KonversiSuhu(int Celcius) {
         this.Celcius = Celcius;
     }
 
-    public KonversiSuhu(){}
+    void inputCelcius() {
+        System.out.print("Input Cecius: ");
+        Celcius = key.nextInt();
+    }
 
-    void hitungKelvin (int Celcius){
+    void hitungKelvin(int Celcius) {
         hasil = Celcius + 273.15f;
-        System.out.println("Konversi Celcius ke Kelvin : " + hasil + " K");
+        System.out.println("Konversi Celcius ke Kelvin	: " + hasil + " K");
     }
-    void hitungFarhenheit (int Celcius){
+
+    float hitungKelvin(float Cecius) {
+        return Celcius + 273.15f;
+    }
+
+    void hitungFarhenheit(int Celcius) {
         hasil = Celcius * 1.8f + 32;
-        System.out.println("Konversi Celcius ke Farhenheit : " + hasil + " F");
+        System.out.println("Konversi Celcius ke Farhenheit	: " + hasil + " F");
     }
-    void hitungRankine (int Celcius){
+
+    float hitungFarhenheit(float Celcius) {
+        return Celcius * 1.8f + 32;
+    }
+
+    void hitungRankine(int Celcius) {
         hasil = Celcius * 1.8f + 491.67f;
-        System.out.println("Konversi Celcius ke Rankine : " + hasil + " Ra");
+        System.out.println("Konversi Celcius ke Rankine	: " + hasil + " Ra");
     }
-    void hitungDalisle (int Celcius){
+
+    float hitungRankine(float Celcius) {
+        return Celcius * 1.8f + 491.67f;
+    }
+
+    void hitungDalisle(int Celcius) {
         hasil = (100 - Celcius) * 1.5f;
-        System.out.println("Konversi Celcius ke Dalisle : " + hasil + " De");
+        System.out.println("Konversi Celcius ke Dalisle	: " + hasil + " De");
     }
-    void hitungNewton (int Celcius){
-        hasil = Celcius * 33/100;
-        System.out.println("Konversi Celcius ke Newton : " + hasil + " N");
+
+    float hitungDalisle(float Celcius) {
+        return (100 - Celcius) * 1.5f;
     }
-    void hitungReaumur (int Celcius){
+
+    void hitungNewton(int Celcius) {
+        hasil = Celcius * 33 / 100;
+        System.out.println("Konversi Celcius ke Newton	: " + hasil + " N");
+    }
+
+    float hitungNewton(float Celcius) {
+        return Celcius * 33 / 100;
+    }
+
+    void hitungReaumur(int Celcius) {
         hasil = Celcius * 0.8f;
-        System.out.println("Konversi Celcius ke Reaumur : " + hasil + " R");
+        System.out.println("Konversi Celcius ke Reaumur	: " + hasil + " R");
     }
-    void hitungRomer(int Celcius){
-        hasil = Celcius * 21/40 + 7.5f;
-        System.out.println("Konversi Celcius ke Romer : " + hasil + " Ro");
+
+    float hitungReaumur(float Celcius) {
+        return Celcius * 0.8f;
+    }
+
+    void hitungRomer(int Celcius) {
+        hasil = Celcius * 21 / 40 + 7.5f;
+        System.out.println("Konversi Celcius ke Romer	: " + hasil + " Ro");
+    }
+
+    float hitungRomer(float Celcius) {
+        return Celcius * 21 / 40 + 7.5f;
     }
 }
