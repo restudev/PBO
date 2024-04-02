@@ -6,8 +6,10 @@ public class TestDeterminan {
         String inputLagi;
 
         do {
-            Determinan abc = new Determinan(1f, 2f, 3f);
+            Determinan abc = new Determinan();
             abc.inputABC();
+			abc.hitungD();
+			//abc.hitungX1X2();
             abc.cetakdeterminan();
 
             System.out.println("Input data lagi [Y/T]?");
