@@ -1,12 +1,24 @@
 import java.util.Scanner;
+import java.io.*; 
 
 public class TestNilai {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException{
         Scanner input = new Scanner(System.in);
-        String inputLagi;
+		BufferedReader br = new BufferedReader(
+			new InputStreamReader(System.in));
+        String inputLagi = "";
+		
+		Nilai nilaiku = new Nilai();
+		nilaiku.nim = "A11.2022.12345";
+		nilaiku.nama = "Siapa";
+		nilaiku.nilaiTugas = 80;
+		nilaiku.nilaiUts = 90;
+		nilaiku.nilaiUas = 100;
+		nilaiku.hitungNilai();
+		nilaiku.cetakNilai();
 
         do{
-        Nilai mahasiswa1 = new Nilai("08982983", "Ghiyatsi", 90, 80, 87);
+        Nilai mahasiswa1 = new Nilai();
         mahasiswa1.inputNilai();
         mahasiswa1.hitungNilai();
         mahasiswa1.cetakNilai();
@@ -15,7 +27,6 @@ public class TestNilai {
         inputLagi = input.nextLine();
         } while (inputLagi.equalsIgnoreCase("Y"));
 
-        input.close();
     }
 
 }

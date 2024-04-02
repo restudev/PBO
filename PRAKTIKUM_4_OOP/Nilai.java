@@ -4,7 +4,7 @@ public class Nilai {
     String nama;
     float nilaiUts, nilaiTugas, nilaiUas, pNilaiTugas, pNilaiUts, pNilaiUas, nilaiAkhir;
     String predikat;
-    char nHuruf;
+    String nHuruf;
 
     Scanner key = new Scanner(System.in); 
     public Nilai(){}; //konstruktor
@@ -35,32 +35,32 @@ public class Nilai {
         nilaiAkhir = pNilaiUts + pNilaiTugas + pNilaiUas;
     }
 
-    char getNilHuruf(float nilai) {
+    String getNilHuruf(float nilai) {
         if (nilai >= 85)
-            nHuruf = 'A';
+            nHuruf = "A";
         else if (nilai >= 70 && nilai < 85)
-            nHuruf = 'B';
+            nHuruf = "B";
         else if (nilai >= 60 && nilai < 70)
-            nHuruf = 'C';
+            nHuruf = "C";
         else if (nilai >= 40 && nilai < 60)
-            nHuruf = 'D';
+            nHuruf = "D";
         else
-            nHuruf = 'E';
+            nHuruf = "E";
         return nHuruf;
     }
 
-    String getPredikat(char huruf) {
+    String getPredikat(String huruf) {
         switch (huruf) {
-            case 'A':
+            case "A":
                 predikat = "Apik";
                 break;
-            case 'B':
+            case "B":
                 predikat = "Baik";
                 break;
-            case 'C':
+            case "C":
                 predikat = "Cukup";
                 break;
-            case 'D':
+            case "D":
                 predikat = "Dablek";
                 break;
             default:
