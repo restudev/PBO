@@ -13,24 +13,24 @@ public class KonversiDetik {
     public KonversiDetik(){}
 
     void inputDetik(){
-        System.out.println("Masukkan detik : "); detik = key.nextInt();
+        System.out.print("Masukkan detik	: "); detik = key.nextInt();
     }
 
     void hari(){
         hasil = detik/86400;
-        System.out.println("Hari : " + hasil); 
+        System.out.println("Hari	: " + hasil); 
     }
     void jam(){
         hasil = (detik%86400)/3600;
-        System.out.println("Jam : " + hasil); 
+        System.out.println("Jam	: " + hasil); 
     }
     void menit(){
         hasil = ((detik%86400)%3600)/60;
-        System.out.println("Menit : " + hasil); 
+        System.out.println("Menit	: " + hasil); 
     }
     void detik(){
         hasil = ((detik%86400)%3600)%60;
-        System.out.println("Detik : " + hasil); 
+        System.out.println("Detik	: " + hasil); 
     }
 
 

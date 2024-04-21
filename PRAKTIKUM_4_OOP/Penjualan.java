@@ -19,20 +19,20 @@ public class Penjualan {
     }
 
     void inputData(){
-        System.out.println("Masukkan data penjualan");
-        System.out.println("Kode Barang : ");
+        System.out.println("======= Masukkan data penjualan =======");
+        System.out.print("Kode Barang		: ");
         kode = key.nextLine();
-        System.out.println("Nama Barang : ");
+        System.out.print("Nama Barang		: ");
         nama = key.nextLine();
-        System.out.println("Harga Satuan Barang : ");
+        System.out.print("Harga Satuan Barang	: ");
         harga = key.nextFloat();
-        System.out.println("Jumlah Barang : ");
+        System.out.print("Jumlah Barang		: ");
         jumlah = key.nextInt();
     }
 
     void hitungTotal() {
         total = harga * jumlah;
-        System.out.println("Total Harga : " + total);
+        System.out.println("Total Harga		: " + total);
     }
 
     String getBonus() {
@@ -50,12 +50,12 @@ public class Penjualan {
     }
 
     void cetakNota() {
-        System.out.println("========== Data Penjualan ==========");
-        System.out.println("Kode Barang : " + kode);
-        System.out.println("Nama Barang : " + nama);
-        System.out.println("Harga Satuan Barang : " + harga);
-        System.out.println("Jumlah Barang : " + jumlah);
+        System.out.println("======= Cetak Data Penjualan =======");
+        System.out.println("Kode Barang		: " + kode);
+        System.out.println("Nama Barang		: " + nama);
+        System.out.println("Harga Satuan Barang	: " + harga);
+        System.out.println("Jumlah Barang		: " + jumlah);
         hitungTotal();
-        System.out.println("Bonus : " + getBonus());
+        System.out.println("Bonus			: " + getBonus());
     }
 }

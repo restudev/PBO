@@ -9,6 +9,7 @@ public class Determinan {
     Scanner key = new Scanner(System.in);
 
     void inputABC() {
+        System.out.println("======= Masukkan Nilai =======");
         System.out.print("Masukkan nilai a : "); a = key.nextInt();
         System.out.print("Masukkan nilai b : "); b = key.nextInt();
         System.out.print("Masukkan nilai c : "); c = key.nextInt();
@@ -35,10 +36,11 @@ public class Determinan {
 
     void cetakdeterminan() {
         hitungD();
-        System.out.println("a : " + a);
-        System.out.println("b : " + b);
-        System.out.println("c : " + c);
-        System.out.println("D : " + D);
+        System.out.println("======= Cetak Nilai =======");
+        System.out.println("Nilai a : " + a);
+        System.out.println("Nilai b : " + b);
+        System.out.println("Nilai c : " + c);
+        System.out.println("Determinan (D) : " + D);
         hitungX1X2();
 
     }

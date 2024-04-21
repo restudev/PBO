@@ -5,7 +5,6 @@ public class TestKonversiDetik {
         Scanner input = new Scanner(System.in);
         String inputLagi;
 
-
         do {
             KonversiDetik konversi = new KonversiDetik();
 

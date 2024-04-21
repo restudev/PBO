@@ -6,11 +6,11 @@ class Produk {
 
     public void inputProduk() {
         Scanner input = new Scanner(System.in);
-        System.out.print("Kode Produk: ");
+        System.out.print("Kode Produk	: ");
         kdProduk = input.nextLine();
-        System.out.print("Nama Produk: ");
+        System.out.print("Nama Produk	: ");
         nmProduk = input.nextLine();
-        System.out.print("Harga Beli: ");
+        System.out.print("Harga Beli	: ");
         hrgBeli = input.nextDouble();
     }
 

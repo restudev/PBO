@@ -6,7 +6,7 @@ class Agen extends Produk {
     double totJual, ppn, bunga, totByr;
 
     public Agen(String cabang) {
-        System.out.println("Cabang: " + cabang);
+        System.out.println("Cabang		: " + cabang);
     }
 
     public void setNota(String nota) {
@@ -15,13 +15,13 @@ class Agen extends Produk {
 
     public void inputJumlah() {
         Scanner input = new Scanner(System.in);
-        System.out.print("Jumlah Jual: ");
+        System.out.print("Jumlah Jual	: ");
         jmlJual = Integer.parseInt(input.nextLine());
     }
 
     public void inputJenis() {
         Scanner input = new Scanner(System.in);
-        System.out.print("Jenis Bayar (1. Cash, 2. Tempo): ");
+        System.out.print("Jenis Bayar (1. Cash, 2. Tempo)	: ");
         int jenis = Integer.parseInt(input.nextLine());
         jnsByr = (jenis == 1) ? "Cash" : "Tempo";
         if (jenis == 2) {
@@ -43,7 +43,7 @@ class Agen extends Produk {
     }
 
     private void printSouvenir(double totalBayar) {
-        System.out.print("Souvenir: ");
+        System.out.print("Souvenir		: ");
         if (totalBayar >= 100000 && totalBayar <= 500000)
             System.out.println("Mug");
         else if (totalBayar <= 750000)
@@ -55,28 +55,28 @@ class Agen extends Produk {
     }
 
     private void printSouvenir(String message) {
-        System.out.println("Souvenir: " + message);
+        System.out.println("Souvenir		: " + message);
     }
 
     public void cetak() {
         System.out.println("\n===== NOTA PENJUALAN =====");
-        System.out.println("No. Nota: " + noNota);
-        System.out.println("Kode Produk: " + kdProduk);
-        System.out.println("Nama Produk: " + nmProduk);
-        System.out.println("Harga Jual per Unit: " + hrgJual);
-        System.out.println("Jumlah Jual: " + jmlJual);
-        System.out.println("Total Jual: " + totJual);
-        System.out.println("Jenis Bayar: " + jnsByr);
+        System.out.println("No. Nota		: " + noNota);
+        System.out.println("Kode Produk		: " + kdProduk);
+        System.out.println("Nama Produk		: " + nmProduk);
+        System.out.println("Harga Jual per Unit	: " + hrgJual);
+        System.out.println("Jumlah Jual		: " + jmlJual);
+        System.out.println("Total Jual		: " + totJual);
+        System.out.println("Jenis Bayar		: " + jnsByr);
         if (jnsByr.equals("Tempo")) {
-            System.out.println("Waktu Tempo: " + waktuTempo + " bulan");
-            System.out.println("PPN: " + ppn);
-            System.out.println("Bunga: " + bunga);
-            System.out.println("Total Bayar: " + totByr);
+            System.out.println("Waktu Tempo		: " + waktuTempo + " bulan");
+            System.out.println("PPN			: " + ppn);
+            System.out.println("Bunga			: " + bunga);
+            System.out.println("Total Bayar		: " + totByr);
             printSouvenir("Tidak dapat souvenir");
         } else {
-            System.out.println("PPN: " + ppn);
-            System.out.println("Bunga: " + bunga);
-            System.out.println("Total Bayar: " + totByr);
+            System.out.println("PPN			: " + ppn);
+            System.out.println("Bunga			: " + bunga);
+            System.out.println("Total Bayar		: " + totByr);
             printSouvenir(totByr);
         }
     }

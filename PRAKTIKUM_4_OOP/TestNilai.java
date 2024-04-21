@@ -9,11 +9,11 @@ public class TestNilai {
         String inputLagi = "";
 		
 		Nilai nilaiku = new Nilai();
-		nilaiku.nim = "A11.2022.12345";
-		nilaiku.nama = "Siapa";
-		nilaiku.nilaiTugas = 80;
-		nilaiku.nilaiUts = 90;
-		nilaiku.nilaiUas = 100;
+		nilaiku.nim = "A11.2022.14668";
+		nilaiku.nama = "Restu Lestari";
+		nilaiku.nilaiTugas = 97;
+		nilaiku.nilaiUts = 95;
+		nilaiku.nilaiUas = 95;
 		nilaiku.hitungNilai();
 		nilaiku.cetakNilai();
 

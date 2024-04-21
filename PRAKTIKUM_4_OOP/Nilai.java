@@ -16,15 +16,16 @@ public class Nilai {
         this.nilaiUas = nilaiUas;
     }
     void inputNilai() {
-        System.out.print("Nim : ");
+        System.out.println("========== Input Nilai ==========");
+        System.out.print("Nim		: ");
         nim = key.nextLine();
-        System.out.print("Nama : ");
+        System.out.print("Nama		: ");
         nama = key.nextLine();
-        System.out.print("Nilai Tugas : ");
+        System.out.print("Nilai Tugas	: ");
         nilaiTugas = key.nextFloat();
-        System.out.print("Nilai UTS : ");
+        System.out.print("Nilai UTS	: ");
         nilaiUts = key.nextFloat();
-        System.out.print("Nilai UAS : ");
+        System.out.print("Nilai UAS	: ");
         nilaiUas = key.nextFloat();
     }
 
@@ -71,6 +72,7 @@ public class Nilai {
 
     void cetakNilai() {
         hitungNilai();
+        System.out.println("========== Cetak Nilai ==========");
         System.out.println("NIM         : " + nim);
         System.out.println("Nama        : " + nama);
         System.out.println("Nilai UTS   : " + nilaiUts +" 20%   : " +pNilaiUts);
