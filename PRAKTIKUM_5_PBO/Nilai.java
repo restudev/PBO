@@ -76,6 +76,7 @@ public class Nilai {
 
     void cetakNilai() {
         hitungNilai();
+        System.out.println("-----------------------------------------------------------");
         System.out.println("NIM         : " + nim);
         System.out.println("Nama        : " + nama);
         System.out.println("Nilai UTS   : " + nilaiUts + " 20%   : " + pNilaiUts);
@@ -86,12 +87,15 @@ public class Nilai {
         System.out.println("Predikat    : " + getPredikat(nHuruf));
     }
 
-    // Metode untuk menampilkan data
-    static void daftarNilai(Nilai[] nilaiArray) {
-        for (int i = 0; i < nilaiArray.length; i++) {
-            System.out.println("\nData Mahasiswa ke-" + (i + 1));
-            nilaiArray[i].cetakNilai();
-        }
+    void judul(){
+        System.out.println("-----------------------------------------------------------");
+        System.out.println("Daftar Nilai PBO");
+        System.out.println("-----------------------------------------------------------");
+        System.out.println("Nim\tNama\tN.Tugas\tN.Uts\tN.Uas\tN.Akkhir"+"\tN.Huruf\tPredikat");
+    }
+
+    void daftarNilai(){
+        System.out.println(nim+"\t"+nama+"\t"+nilaiTugas+"\t"+nilaiUts+"\t"+nilaiUas+"\t"+nilaiAkhir+"\t"+nHuruf+"\t"+predikat);
     }
 
 }
