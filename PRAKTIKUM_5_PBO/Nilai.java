@@ -21,15 +21,15 @@ public class Nilai {
     }
 
     void inputNilai() {
-        System.out.print("Nim : ");
+        System.out.print("Nim		: ");
         nim = key.nextLine();
-        System.out.print("Nama : ");
+        System.out.print("Nama		: ");
         nama = key.nextLine();
-        System.out.print("Nilai Tugas : ");
+        System.out.print("Nilai Tugas	: ");
         nilaiTugas = key.nextFloat();
-        System.out.print("Nilai UTS : ");
+        System.out.print("Nilai UTS	: ");
         nilaiUts = key.nextFloat();
-        System.out.print("Nilai UAS : ");
+        System.out.print("Nilai UAS	: ");
         nilaiUas = key.nextFloat();
     }
 
@@ -91,11 +91,11 @@ public class Nilai {
         System.out.println("-----------------------------------------------------------");
         System.out.println("Daftar Nilai PBO");
         System.out.println("-----------------------------------------------------------");
-        System.out.println("Nim\tNama\tN.Tugas\tN.Uts\tN.Uas\tN.Akkhir"+"\tN.Huruf\tPredikat");
+        System.out.println("Nim\t\tNama\tN.Tugas\tN.Uts\tN.Uas\tN.Akkhir"+"\tN.Huruf\tPredikat");
     }
 
     void daftarNilai(){
-        System.out.println(nim+"\t"+nama+"\t"+nilaiTugas+"\t"+nilaiUts+"\t"+nilaiUas+"\t"+nilaiAkhir+"\t"+nHuruf+"\t"+predikat);
+        System.out.println(nim+"\t"+nama+"\t"+nilaiTugas+"\t"+nilaiUts+"\t"+nilaiUas+"\t"+nilaiAkhir+"\t\t"+nHuruf+"\t"+predikat);
     }
 
 }
