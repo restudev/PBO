@@ -1,13 +1,13 @@
 public class tugas1{
 public static void main(String args[])
 {
-	String email="111202214668@mhs.dinus.ac.id";
+	String email="restu@gmail.com";
 	String hp;
-	hp = "085826307779";
+	hp = "08524678xxxx";
 	float ipk = 5.0f;
 	boolean aktif=true;
-	System.out.println("Nama		: Restu Lestari Mulianingrum");
-	System.out.println("NIM		: A11.2022.14668");
+	System.out.println("Nama		: Restu");
+	System.out.println("NIM		: A11.2022.xxxxxx");
 	System.out.println("Alamat		: Tegal");
 	System.out.println("Kota		: Tegal");
 	System.out.println("Kode Pos	: 11111");

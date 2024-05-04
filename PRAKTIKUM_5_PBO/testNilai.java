@@ -9,8 +9,8 @@ public class testNilai {
         String inputLagi = "";
 
         Nilai nilaiku = new Nilai();
-        nilaiku.nim = "A11.2022.14668";
-        nilaiku.nama = "Restu Lestari";
+        nilaiku.nim = "A11.2022.xxxxx";
+        nilaiku.nama = "Restu";
         nilaiku.nilaiTugas = 97;
         nilaiku.nilaiUts = 95;
         nilaiku.nilaiUas = 95;
