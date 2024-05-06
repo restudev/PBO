@@ -4,7 +4,7 @@ public class AgenDemo {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        System.out.print("Nama Agen	: ");
+        System.out.print("Cabang	: ");
         String namaAgent = input.nextLine();
         System.out.print("Jumlah Inputan	: ");
         int jumlah = input.nextInt();

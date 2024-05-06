@@ -14,19 +14,19 @@ public class Produk {
         hrgBeli = input.nextFloat();
 
         if (hrgBeli > 200000) {
-            hrgJual = hrgBeli + 0.5 * hrgBeli;
+            hrgJual = hrgBeli + 0.1 * hrgBeli;
             System.out.println("Harga Jual	: " + hrgJual);
         } else if (hrgBeli > 100000) {
-            hrgJual = hrgBeli + 0.75 * hrgBeli;
+            hrgJual = hrgBeli + 0.15 * hrgBeli;
             System.out.println("Harga Jual	: " + hrgJual);
         } else if (hrgBeli > 50000) {
-            hrgJual = hrgBeli + 1 * hrgBeli;
+            hrgJual = hrgBeli + 0.2 * hrgBeli;
             System.out.println("Harga Jual	: " + hrgJual);
         } else if (hrgBeli > 25000) {
-            hrgJual = hrgBeli + 1.5 * hrgBeli;
+            hrgJual = hrgBeli + 0.3 * hrgBeli;
             System.out.println("Harga Jual	: " + hrgJual);
         } else if (hrgBeli < 25000) {
-            hrgJual = hrgBeli + 2 * hrgBeli;
+            hrgJual = hrgBeli + 0.5 * hrgBeli;
             System.out.println("Harga Jual	: " + hrgJual);
         }
     }

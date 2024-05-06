@@ -60,8 +60,7 @@ class Agen extends Produk {
     }
 
     void cetak() {
-        totByr = totJual + ppn + bunga;
-        System.out.println("Total Bayar	: " + totByr);
+        System.out.println("Total Bayar	: " + hitungJual());
         if (jnsByr == 1 && (totJual >= 100000 && totJual <= 500000)) {
             souvenir = "Mug";
         } else if (jnsByr == 1 && (totJual > 500000 && totJual <= 750000)) {
