@@ -1,30 +1,27 @@
-public class Mobil2 {
-	int roda = 4;
-	int body = 1;
-	static int mesin = 1;
-	String nama;
+package transportasi;
 
-	static void maju() {
-		System.out.println("Maju.....");
-	}
+public class Mobil2{
+    public int roda = 4;
+    public int body = 1;
+    public int mesin = 1;
+    public void maju(){
+        System.out.println("Maju .....");
+    }
+    public void mundur(){
+        System.out.println("Mundur .....");
+    }
+    public void belok(){
+        System.out.println("Belok.....");
+    }
+    public void hidup(String nama){
+        System.out.println("Hidupkan Mobil : "+nama);
+    }
+    public void mati(String nama){
+        System.out.println("Matikan Mobil : "+nama);
+    }
+    public void ubahGigi(String nama){
+        System.out.println("Ubah Gigi Mobil : "+nama);
+    }
 
-	void mundur() {
-		System.out.println("Mundur.....");
-	}
-
-	void belok() {
-		System.out.println("Belok.....");
-	}
-
-	void hidupkanMobil() {
-		System.out.println("Hidupkan Mobil	: " + nama);
-	}
-
-	void matikanMobil() {
-		System.out.println("Matikan Mobil	: " + nama);
-	}
-
-	void ubahGigi() {
-		System.out.println("Ubah Gigi	: " + nama);
-	}
 }
+

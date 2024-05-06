@@ -6,8 +6,8 @@ public class TransportasiDemo {
         Mobil2 avanza = new Mobil2();
         Bicycle sepeda = new Bicycle();
 
-        avanza.setRoda(4);
-        avanza.setMesin(1);
+        System.out.println("Jumlah Roda: " + avanza.roda);
+        System.out.println("Jumlah Mesin: " + avanza.mesin);
         avanza.hidup("Avanza Silver");
         avanza.ubahGigi("Xenia");
         avanza.maju();
