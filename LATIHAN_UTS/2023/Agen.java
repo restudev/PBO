@@ -36,16 +36,16 @@ class Agen extends Produk {
         if (jnsByr == 1) {
             System.out.println("Ket.Bayar	: Cash");
             bunga = 0;
-            ppn = 0.11 * totJual;
+            ppn = 0.11 * getHargaJual();
             System.out.println("PPN		: " + ppn);
         } else if (jnsByr == 2) {
             System.out.println("Ket.Bayar	: Tempo");
             System.out.print("Waktu Tempo (bulan): ");
             waktuTempo = input.nextInt();
-            ppn = 0.11 * totJual;
+            ppn = 0.11 * getHargaJual();
             System.out.println("PPN		: " + ppn);
             if (waktuTempo > 1) {
-                bunga = 0.05 * totJual;
+                bunga = 0.05 * getHargaJual();
             }
             System.out.println("Bunga		: " + bunga);
         } else {

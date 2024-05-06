@@ -4,9 +4,9 @@ public class AgenDemo {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        System.out.print("Cabang	: ");
+        System.out.print("Cabang\t\t: ");
         String namaAgent = input.nextLine();
-        System.out.print("Jumlah Inputan	: ");
+        System.out.print("Jumlah Inputan\t: ");
         int jumlah = input.nextInt();
 
         Agen[] produk = new Agen[jumlah];
@@ -18,13 +18,12 @@ public class AgenDemo {
             produk[i].cetak();
         }
 
-        // Print the list of products
         System.out.println("\nDaftar Agen Aksesori Hp - " + namaAgent);
         String leftAlignFormat = "| %-2s | %-6s | %-16s | %-12s | %-9s | %-12s | %-8s | %-12s | %-12s | %-12s | %-20s |%n";
         System.out.format(
                 "===========================================================================================================================================================%n");
         System.out.format(
-                "| No | Nota   | Nama HP          | Harga Jual   | Jml Jual  | Tot Jual     | Tempo    | Bunga        | PPN          | Total Bayar  | Souvenir             |%n");
+                "| No | Nota   | Nama Barang       | Harga Jual   | Jml Jual  | Tot Jual     | Tempo    | Bunga        | PPN          | Total Bayar  | Souvenir             |%n");
         System.out.format(
                 "===========================================================================================================================================================%n");
         for (int i = 0; i < jumlah; i++) {
