@@ -2,13 +2,14 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package PRAKTIKUM9;
+package com.restu;
 
 /**
  *
  * @author Restu
  */
-class tesBank2 {
+public class tesBank {
+
     public static void main(String[] args) {
         int i;
         Account[] accounts = new Account[100];

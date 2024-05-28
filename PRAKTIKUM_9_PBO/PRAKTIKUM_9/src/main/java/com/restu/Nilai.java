@@ -1,4 +1,4 @@
-package PRAKTIKUM9;
+package com.restu;
 import javax.swing.JOptionPane;
 
 /*

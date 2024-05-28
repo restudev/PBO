@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package PRAKTIKUM9;
+package com.restu;
 
 /**
  *
@@ -82,6 +82,8 @@ public class Kalkulator extends javax.swing.JFrame {
         hasil.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         hasil.setText("Hasil");
 
+        txtHasil.setEditable(false);
+        txtHasil.setBackground(new java.awt.Color(204, 255, 255));
         txtHasil.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtHasilActionPerformed(evt);
