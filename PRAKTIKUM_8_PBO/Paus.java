@@ -1,20 +1,20 @@
 public class Paus extends Hewan {
-    public Paus(String jenis, String ciri){
-        super(jenis,ciri);
+    Paus(String jenis, String ciri) {
+        super(jenis, ciri);
     }
 
     @Override
     public void suara() {
-        System.out.println("Suara\t: Wuussshhhhh");
+        System.out.println("Suara\t: Wuhshshshs");
     }
 
     @Override
     public void berjalan() {
-        System.out.println("Paus berenang");
+        System.out.println("Paus berenang dengan sirip");
     }
 
     @Override
     public void bernafas() {
-        System.out.println("Paus bernafas menggunakan insang");
+        System.out.println("Paus bernafas menggunakan paru-paru");
     }
 }

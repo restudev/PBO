@@ -1,8 +1,7 @@
 public class Hewan {
     String jenis, ciri;
 
-    Hewan() {
-    };
+    Hewan() {}
 
     Hewan(String jenis, String ciri) {
         this.jenis = jenis;
@@ -21,3 +20,4 @@ public class Hewan {
         System.out.println("Cara bernafas hewan");
     }
 }
+
