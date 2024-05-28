@@ -1,16 +1,26 @@
 public class MatematikaDemo {
     public static void main(String[] args) {
-        Matematika math = new Matematika();
-        math.pertambahan(20, 20);
-        math.pengurangan(10, 5);
-        math.perkalian(10, 20);
-        math.pembagian(20, 2);
+
+        Matematika hitung = new Matematika();
+        double hsl;
+        hitung.a = 99;
+        hitung.b = 7;
+        hitung.pertambahan();
+        hitung.pengurangan();
+        hitung.perkalian();
+        hitung.pembagian();
 
         System.out.println("-------------------------------------------------");
 
-        math.pertambahan(12.5, 28.7, 14.2);
-        math.pengurangan(12.5, 28.7, 14.2);
-        math.perkalian(12.5, 28.7, 14.2);
-        math.pembagian(12.5, 28.7, 14.2);
+        double a = 12.5, b = 28.7, c = 14.2;
+        hsl = hitung.pertambahan(a, b, c);
+        System.out.println("Hasil Pertambahan " + a + " + " + b + " + " + c + " = " + hsl);
+        hsl = hitung.pengurangan(a, b, c);
+        System.out.println("Hasil Pengurangan " + a + " + " + b + " + " + c + " = " + hsl);
+        hsl = hitung.perkalian(a, b, c);
+        System.out.println("Hasil Perkalian " + a + " x " + b + " x " + c + " = " + hsl);
+        hsl = hitung.pembagian(a, b, c);
+        System.out.println("Hasil Pembagian " + a + " + " + b + " + " + c + " = " + hsl);
+
     }
 }

@@ -1,15 +1,16 @@
 public class Pesawat {
-    int sayap, ekor;
-    
-    Pesawat(){
+    public int sayap = 2;
+    public int ekor = 1;
+
+    public Pesawat() {
         System.out.println("object Pesawat dibuat............");
     }
 
-    void terbang(){
+    public void terbang() {
         System.out.println("Terbang..........");
     }
 
-    void mendarat(){
+    public void mendarat() {
         System.out.println("Mendarat..........");
     }
 }

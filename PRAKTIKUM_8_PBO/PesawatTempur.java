@@ -1,11 +1,13 @@
-public class PesawatTempur extends Pesawat{
-    PesawatTempur(){
+public class PesawatTempur extends Pesawat {
+    public PesawatTempur() {
         System.out.println("object pesawat tempur dibuat..........");
     }
-    void manuver(){
+
+    public void manuver() {
         System.out.println("Manuver..........");
     }
-    void terbang(){
+
+    public void terbang() {
         super.terbang();
         System.out.println("Terbang ala tempur..........");
     }
