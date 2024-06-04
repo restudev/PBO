@@ -1,6 +1,14 @@
-package latihan1;
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package com.restu.praktikum10;
 
-class Handphone extends Telepon implements Kamera, Radio {
+/**
+ *
+ * @author D2A
+ */
+public class Handphone extends Telepon implements Kamera, Radio {
     private String gelombang;
     private float pixel;
     public void ambilGambar(){
