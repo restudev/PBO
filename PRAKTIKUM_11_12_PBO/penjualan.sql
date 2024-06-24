@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 21, 2024 at 02:21 PM
+-- Generation Time: Jun 25, 2024 at 01:26 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -37,6 +37,38 @@ CREATE TABLE `barang` (
   `stok_min` int(4) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
+--
+-- Dumping data for table `barang`
+--
+
+INSERT INTO `barang` (`kd_brg`, `nm_brg`, `satuan`, `harga_jual`, `harga_beli`, `stok`, `stok_min`) VALUES
+('B001', 'Baju', 'buah', 300000, 10, 1, 250000);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `djual`
+--
+
+CREATE TABLE `djual` (
+  `no_jual` int(10) NOT NULL,
+  `kd_brg` char(6) NOT NULL,
+  `harga_jual` float DEFAULT NULL,
+  `jml_jual` int(4) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `jual`
+--
+
+CREATE TABLE `jual` (
+  `no_jual` int(10) NOT NULL,
+  `kd_kons` char(6) DEFAULT NULL,
+  `tgl_jual` date DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
 -- --------------------------------------------------------
 
 --
@@ -54,6 +86,13 @@ CREATE TABLE `konsumen` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
+-- Dumping data for table `konsumen`
+--
+
+INSERT INTO `konsumen` (`kd_kons`, `nm_kons`, `alm_kons`, `kota_kons`, `kd_pos`, `phone`, `email`) VALUES
+('P12345', 'Restu Lestari', 'Semarang Barat', 'Semarang', '12345', '085822679076', 'restu@gmail.com');
+
+--
 -- Indexes for dumped tables
 --
 
@@ -62,6 +101,18 @@ CREATE TABLE `konsumen` (
 --
 ALTER TABLE `barang`
   ADD PRIMARY KEY (`kd_brg`);
+
+--
+-- Indexes for table `djual`
+--
+ALTER TABLE `djual`
+  ADD PRIMARY KEY (`no_jual`,`kd_brg`);
+
+--
+-- Indexes for table `jual`
+--
+ALTER TABLE `jual`
+  ADD PRIMARY KEY (`no_jual`);
 
 --
 -- Indexes for table `konsumen`
