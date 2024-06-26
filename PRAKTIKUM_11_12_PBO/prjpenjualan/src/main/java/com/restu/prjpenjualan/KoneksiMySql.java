@@ -14,14 +14,14 @@ import java.sql.SQLException;
 
 /**
  *
- * @author rdannyoka
+ * @author Restu
  */
 public class KoneksiMySql {
     String url, usr, pwd, dbn;
     public KoneksiMySql (String dbn) {
         this.url = "jdbc:mysql://localhost/" + dbn;
         this.usr = "root"; // Sesuaikan dengan username db anda
-        this.pwd = "134679"; // Sesuaikan dengan password db anda
+        this.pwd = ""; // Sesuaikan dengan password db anda
     }
     public KoneksiMySql (String host, String user, String pass,String dbn) {
         this.url = "jdbc:mysql://" + host + "/" + dbn;
