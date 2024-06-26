@@ -44,9 +44,9 @@ public class frmBarang extends javax.swing.JFrame {
         txtKode.setText((String) tblBrg.getValueAt(row, 0));
         txtNama.setText((String) tblBrg.getValueAt(row, 1));
         cmbSatuan.setSelectedItem((String) tblBrg.getValueAt(row, 2));
-        String hargaJual = Double.toString((Double) tblBrg.getValueAt(row, 3));
+        String hargaJual = Double.toString((Double) tblBrg.getValueAt(row, 4));
         txtHargaJual.setText(hargaJual);
-        String hargaBeli = Double.toString((Double) tblBrg.getValueAt(row, 4));
+        String hargaBeli = Double.toString((Double) tblBrg.getValueAt(row, 3));
         txtHargaBeli.setText(hargaBeli);
         String stok = Integer.toString((Integer) tblBrg.getValueAt(row, 5));
         txtStok.setText(stok);
@@ -454,7 +454,7 @@ public class frmBarang extends javax.swing.JFrame {
             if (edit == true) {
                 stm.executeUpdate("update barang set nm_brg='" + tNama + "',satuan='" + sSatuan + "',harga_jual=" + hrgJ + ",stok=" + stk + ",stok_min=" + stkMin + ",harga_beli=" + hrgB + "where kd_brg='" + tKode + "'");
             } else {
-                stm.executeUpdate("INSERT into barang VALUES('" + tKode + "','" + tNama + "','" + sSatuan + "'," + hrgJ + "," + stk + "," + stkMin + "," + hrgB + ")");
+                stm.executeUpdate("INSERT into barang VALUES('" + tKode + "','" + tNama + "','" + sSatuan + "'," + hrgB + "," + hrgJ + "," + stk + "," + stkMin + ")");
             }
             tblBrg.setModel(new DefaultTableModel(dataTable, header));
             baca_data();
