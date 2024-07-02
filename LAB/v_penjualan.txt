@@ -1,0 +1,4 @@
+SELECT d.no_jual,j.tgl_jual,k.nm_kons,d.kd_brg,b.nm_brg,d.harga_jual,d.jml_jual, 
+(d.harga_jual*d.jml_jual) AS totjual
+FROM djual d,jual j,barang b,konsumen k
+WHERE d.no_jual=j.no_jual AND d.kd_brg=b.kd_brg AND j.kd_kons=k.kd_kons
