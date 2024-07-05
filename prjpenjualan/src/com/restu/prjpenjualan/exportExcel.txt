@@ -1,0 +1,33 @@
+private void exportToExcel(JTable table, File file) {
+        try{
+            TableModel tableModel = table.getModel();
+            FileWriter fOut = new FileWriter(file);
+             
+            for(int i = 0; i < tableModel.getColumnCount(); i++){
+                fOut.write(tableModel.getColumnName(i)+"\t");
+            }
+             
+            fOut.write("\n");
+             
+            for(int i = 0; i < tableModel.getRowCount(); i++){
+                for(int j = 0; j < tableModel.getColumnCount(); j++){
+                    fOut.write(tableModel.getValueAt(i, j).toString()+"\t");
+                }
+                fOut.write("\n");
+            }
+            fOut.close();
+        } catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+
+
+private void cmdExportActionPerformed(java.awt.event.ActionEvent evt) {                                          
+        // TODO add your handling code here:
+        try{
+        exportToExcel(tblBrg, new File("DataBarang.xls"));
+        JOptionPane.showMessageDialog(null, "Sukses Export data .....");
+        }catch(Exception e)
+        {JOptionPane.showMessageDialog(null, e);
+            
+  }
