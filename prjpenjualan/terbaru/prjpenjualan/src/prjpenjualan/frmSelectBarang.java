@@ -104,7 +104,6 @@ public class frmSelectBarang extends javax.swing.JFrame {
         jButton2.setText("jButton2");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setEnabled(false);
 
         tblBrg.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
